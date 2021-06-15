@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "60c05fb45b5a622a24c9a867",
+        "customerName": "Mr. Ahmed Khan",
+        "phoneNo": "0300-1234567",
+        "pizzaName": "Fajita Large",
+        "salad": "Large",
+        "coldDrink": "Pepsi Pitcher",
+        "govtTax": 180,
+        "total": 2000
+    },
+    {
+        "_id": "60c05ffaa0a67d2bdb162e2a",
+        "customerName": "Mr. Kashif Ali",
+        "phoneNo": "0333-1234567",
+        "pizzaName": "Fajita Regular",
+        "salad": "Small",
+        "coldDrink": "7up Regular",
+        "govtTax": 50,
+        "total": 400
+    },
+    {
+        "_id": "60c06011a0a67d2bdb162e2b",
+        "customerName": "Mr. Tanveer",
+        "phoneNo": "0345-1234567",
+        "pizzaName": "Chicken Tikka Large",
+        "salad": "Large",
+        "coldDrink": "Fanta Pitcher",
+        "govtTax": 250,
+        "total": 1800
+    },
+    {
+        "_id": "60c06041a0a67d2bdb162e2c",
+        "customerName": "Mr. Iqbal Ahmed",
+        "phoneNo": "0321-1234567",
+        "pizzaName": "Supreme Extra Cheese Large",
+        "salad": "NO",
+        "coldDrink": "7up Pitcher",
+        "govtTax": 90,
+        "total": 1200
+    },
+    {
+        "_id": "60c0604da0a67d2bdb162e2d",
+        "customerName": "Mr. Ziauddin",
+        "phoneNo": "0332-1234567",
+        "pizzaName": "Mashroom Olives Regular",
+        "salad": "Small",
+        "coldDrink": "DEW Can",
+        "govtTax": 60,
+        "total": 500
+    },
+    {
+        "_id": "60c0605ca0a67d2bdb162e2e",
+        "customerName": "Mr. Zubair Ali",
+        "phoneNo": "0334-1234567",
+        "pizzaName": "Lasagne Mashroom Small",
+        "salad": "NO",
+        "coldDrink": "DEW Can",
+        "govtTax": 80,
+        "total": 600
+    },
+    {
+        "_id": "60c0606fa0a67d2bdb162e2f",
+        "customerName": "Mr. Adeel Shafiq",
+        "phoneNo": "0335-1234567",
+        "pizzaName": "Chicken Tikka Cheese Large",
+        "salad": "Large",
+        "coldDrink": "Pepsi Regular",
+        "govtTax": 100,
+        "total": 1100
+    }
+]
