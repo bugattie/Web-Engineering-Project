@@ -9,7 +9,7 @@ router
   .post(customerController.createPizza);
 
 router
-  .route("/:id")
+  .route("/:phoneNo")
   .get(customerController.getCustomer)
   .patch(customerController.updateCustomer)
   .delete(customerController.deleteCustomer);

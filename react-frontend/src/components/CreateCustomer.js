@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, InputNumber, Button, Select } from "antd";
+import { Form, Input, Button, Select } from "antd";
 import axios from "axios";
 import swal from "sweetalert";
 

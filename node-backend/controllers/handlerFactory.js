@@ -19,9 +19,10 @@ exports.getAll = (Model) =>
 
 exports.getOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    const doc = await Model.findById(req.params.id);
+    const doc = await Model.findOne({ phoneNo: req.params.phoneNo });
 
-    if (!doc) return next(new AppError("No document found with that ID", 404));
+    if (!doc)
+      return next(new AppError("No document found with that phoneNo", 404));
 
     res.status(200).json({
       status: "success",
@@ -64,9 +65,14 @@ exports.updateOne = (Model) =>
 
 exports.deleteOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    const doc = await Model.findByIdAndDelete(req.params.id);
+    let doc = await Model.findOne({ phoneNo: req.params.phoneNo });
 
-    if (!doc) return next(new AppError("No document found with that ID", 404));
+    if (!doc)
+      return next(
+        new AppError("No document found with that phone number", 404)
+      );
+
+    doc = await Model.deleteOne({ phoneNo: req.params.phoneNo });
 
     res.status(200).json({
       status: "success",
