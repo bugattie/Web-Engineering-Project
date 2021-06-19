@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Form, Input, InputNumber, Button } from "antd";
+import React, { useState } from "react";
+import { Form, Input, Button } from "antd";
 import swal from "sweetalert";
 const axios = require("axios").default;
 

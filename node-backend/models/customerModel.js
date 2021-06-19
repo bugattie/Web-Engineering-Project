@@ -4,7 +4,6 @@ const customerSchema = new mongoose.Schema({
   customerName: {
     type: String,
     required: [true, "A customer must have a name"],
-    unique: true,
     trim: true,
   },
   phoneNo: {

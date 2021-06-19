@@ -48,17 +48,20 @@ exports.createOne = (Model) =>
 
 exports.updateOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    const doc = await Model.findByIdAndUpdate(req.params.id, req.body, {
+    let doc = await Model.findOne({ phoneNo: req.params.phoneNo });
+
+    if (!doc) return next(new AppError("No document found with that ID", 404));
+    console.log(req.body);
+
+    doc = await Model.updateOne({ phoneNo: req.params.phoneNo }, req.body, {
       new: true,
       runValidators: true,
     });
 
-    if (!doc) return next(new AppError("No document found with that ID", 404));
-
     res.status(200).json({
       status: "success",
       data: {
-        message: doc,
+        document: doc,
       },
     });
   });

@@ -117,7 +117,7 @@ export const CreateCustomer = () => {
           <Input />
         </Form.Item>
 
-        <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 5 }}>
+        <Form.Item wrapperCol={{ ...layout.labelCol, offset: 5 }}>
           <Button type="primary" htmlType="submit" block>
             Submit
           </Button>
